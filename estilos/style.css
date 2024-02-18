@@ -1,1 +1,166 @@
 @charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor1: #a0ccdc;
+    --cor2: #8ebaca;
+    --cor3: #7da8b7;
+    --cor4: #6b96a5;
+    --cor5: #598492;
+}
+
+body, html {
+    background-color: var(--cor4);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    background-color: white;
+    width: 270px;
+    height: 530px;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    transition: width .4s, height .4s;
+    transition-timing-function: linear;
+}
+
+div#imagem {
+    display: block;
+    background: url(../imagens/pexels-jakob-jin-16518164.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 230px;
+    border-radius: 25px 25px 0 0;
+}
+
+div#form {
+    
+}
+
+div#form h1{
+    padding-top: 12px;
+    text-align: center;
+}
+
+div#form p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    text-align: justify;
+}
+
+
+
+
+form {
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 450px;
+}
+
+form > div#email {
+    padding: 4px 3px;
+    background-color: var(--cor3);
+    border-radius: 7px;
+
+}
+
+div#email > input {
+    position: relative;
+    left: 8px;
+    width: 91%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+div#email > label {
+   position: relative;
+   top: 6px;
+   left: 5px;
+}
+
+form > div#senha {
+    margin-top: 10px;
+    padding: 4px 3px;
+    background-color: var(--cor3);
+    border-radius: 7px;
+}
+
+div#senha > input {
+    position: relative;
+    left: 8px;
+    width: 91%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+div#senha > label {
+    position: relative;
+    top: 6px;
+    left: 5px;
+ }
+ 
+
+ div#btn {
+    width: 450px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+ }
+
+ button{
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 8px;
+ }
+
+ button#btn1 {
+    color: white;
+    font-size: 1em;
+    margin-top: 5px;
+    padding: 12px;
+    border: none;
+    background-color: rgb(2, 98, 162);
+ }
+
+ button#btn1:hover {
+    background-color: rgb(22, 90, 135);
+ }
+
+ button#btn2{
+    background-color: white;
+    border: 1px solid var(--cor2);
+    font-size: 1em;
+    margin-top: 5px;
+    padding: 12px;
+ }
+
+ button#btn2:hover {
+    background-color: rgb(229, 229, 229);
+ }
+
+ button#btn2 > i {
+    padding-left: 4px;
+    position: absolute;
+    font-size: 1.2em;
+    color: rgb(15, 84, 130);
+ }
