@@ -121,6 +121,8 @@ div#senha > label {
  }
  
 
+
+
  div#btn {
     width: 450px;
     margin-right: 25px;
@@ -134,6 +136,7 @@ div#senha > label {
  }
 
  button#btn1 {
+    cursor: pointer;
     color: white;
     font-size: 1em;
     margin-top: 5px;
@@ -147,6 +150,7 @@ div#senha > label {
  }
 
  button#btn2{
+    cursor: pointer;
     background-color: white;
     border: 1px solid var(--cor2);
     font-size: 1em;
